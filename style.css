@@ -14,8 +14,12 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: grey 2px solid;
+    background-color:lightgray;;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+     z-index: 3;
 
 }
 
@@ -64,7 +68,8 @@ body {
     text-transform: capitalize;
     font-size: 15px;
     border-bottom: grey 2px solid;
-
+   
+   
 
 }
 
@@ -91,9 +96,29 @@ body {
 
 }
 
+
 .sales-img img {
     width: 100%;
+    z-index: 2;
+     
 }
+.sales-img__offer{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+.sales-img{
+    position: relative;
+   
+}
+.sales-img__offer{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
 
 .section-three {
     padding: 20px;
@@ -186,6 +211,25 @@ body {
 }
 .section-footer__devide ul{
     list-style: none;
+}
+.mylearning{
+   position: relative;
+   cursor: pointer;
+}
+.mylearning:hover .mylearning-pop{
+    display: block;
+}
+
+.mylearning-pop{
+    position: absolute;
+    background-color: white;
+    border: black 1px solid;
+    width: 100px;
+    padding:20px;
+    right:0px;
+    top: 150%;
+    display: none;
+    text-transform: capitalize;
 }
 
 
