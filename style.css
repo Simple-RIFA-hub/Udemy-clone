@@ -86,15 +86,22 @@ body {
     color: white;
     padding: 10px;
     border-radius: 30px;
+    animation-name: bounce;
 }
 
 .section-two li:hover {
     cursor: pointer;
-    background-color: orchid;
+    color: black;
+    background-color: white;
     border: blueviolet 2px solid;
     text-decoration: underline;
+    transition: 1s;
+  
+   
+
 
 }
+
 
 
 .sales-img img {
@@ -230,6 +237,25 @@ body {
     top: 150%;
     display: none;
     text-transform: capitalize;
+}
+.sales-img__offer{
+    animation-name: blur;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+
+}
+@keyframes blur{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        
+    }
+    100%{
+        transform: scale(1);
+        opacity:1 ;
+    }
 }
 
 
