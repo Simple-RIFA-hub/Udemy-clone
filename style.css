@@ -196,7 +196,7 @@ body {
 
 .section-five__popular--crd {
     flex-basis: 20%;
-    margin: 10px;
+    margin: 5px;
 }
 
 .section-five__popular--crd img {
@@ -294,7 +294,8 @@ body {
     }
 
     .section-five__popular--crd {
-        flex-basis: 45%;
+        flex-basis: 35%;
+
     }
     .section-two,.section-one_search,.section-one_icon{
         display: none;
