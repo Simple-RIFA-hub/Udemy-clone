@@ -5,7 +5,7 @@
 
 body {
     font-family: "gabrito", sans-serif;
-    background-color:lightgray;
+    background-color: lightgray;
 
 }
 
@@ -14,12 +14,12 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: grey 2px solid;
-    background-color:lightgray;;
+    background-color: lightgray;
     gap: 10px;
     align-items: center;
     position: sticky;
     top: 0px;
-     z-index: 3;
+    z-index: 3;
 
 }
 
@@ -28,7 +28,7 @@ body {
     text-transform: capitalize;
     font-size: 25px;
     font-weight: lighter;
-   
+
 }
 
 .section-one_search {
@@ -68,8 +68,8 @@ body {
     text-transform: capitalize;
     font-size: 15px;
     border-bottom: grey 2px solid;
-   
-   
+
+
 
 }
 
@@ -96,8 +96,8 @@ body {
     border: blueviolet 2px solid;
     text-decoration: underline;
     transition: 1s;
-  
-   
+
+
 
 
 }
@@ -107,20 +107,23 @@ body {
 .sales-img img {
     width: 100%;
     z-index: 2;
-     
+
 }
-.sales-img__offer{
+
+.sales-img__offer {
     border: 2px solid white;
     width: fit-content;
     padding: 5px;
     text-transform: capitalize;
 
 }
-.sales-img{
+
+.sales-img {
     position: relative;
-   
+
 }
-.sales-img__offer{
+
+.sales-img__offer {
     position: absolute;
     bottom: 20px;
     left: 10px;
@@ -135,14 +138,14 @@ body {
 
 .section-three__recomond {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .section-three__recomond-card1 {
     margin-top: 20px;
-   flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 .section-three__recomond-card1 img {
@@ -150,95 +153,110 @@ body {
     height: 70%;
 
 }
-.section-four{
+
+.section-four {
     padding: 20px;
     margin-top: 20px;
     text-transform: capitalize;
 }
-.section-four__sub{
+
+.section-four__sub {
     margin-top: 20px;
     gap: 5px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-   
+
 }
-.section-four__sub p{
+
+.section-four__sub p {
     border: grey 1px solid;
     padding: 5px;
     flex-basis: 25%;
     flex-grow: 1;
-   
- 
-   
+
+
+
 
 }
-.section-five{
+
+.section-five {
     padding: 10px;
-    text-transform:capitalize;
-  
+    text-transform: capitalize;
+
 }
-.section-five__popular{
+
+.section-five__popular {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
-.section-five__popular--crd{
+
+.section-five__popular--crd {
     flex-basis: 20%;
     margin: 10px;
 }
-.section-five__popular--crd img{
+
+.section-five__popular--crd img {
     width: 100%;
     height: 200px;
 }
-.section-footer{
+
+.section-footer {
     padding: 10px;
     text-transform: capitalize;
     background-color: black;
     color: white;
     margin: 10px;
 }
-.section-footer h1{
+
+.section-footer h1 {
     margin-top: 20px;
     margin-left: 20px;
 }
-.section-footer h1:hover{
-   border: black 2px solid;
-   border-bottom: blueviolet 2px solid;
-   width: fit-content;
- 
+
+.section-footer h1:hover {
+    border: black 2px solid;
+    border-bottom: blueviolet 2px solid;
+    width: fit-content;
+
 }
-.section-footer__devide{
+
+.section-footer__devide {
     display: flex;
     padding: 10px;
     margin: 10px;
     gap: 20px;
 }
-.section-footer__devide ul{
+
+.section-footer__devide ul {
     list-style: none;
 }
-.mylearning{
-   position: relative;
-   cursor: pointer;
+
+.mylearning {
+    position: relative;
+    cursor: pointer;
 }
-.mylearning:hover .mylearning-pop{
+
+.mylearning:hover .mylearning-pop {
     display: block;
 }
 
-.mylearning-pop{
+.mylearning-pop {
     position: absolute;
     background-color: white;
     border: black 1px solid;
     width: 100px;
-    padding:20px;
-    right:0px;
+    padding: 20px;
+    right: 0px;
     top: 150%;
     display: none;
     text-transform: capitalize;
 }
-.sales-img__offer{
+
+.sales-img__offer {
     animation-name: blur;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -246,18 +264,46 @@ body {
     opacity: 0;
 
 }
-@keyframes blur{
-    0%{
+.menu{
+    display: none;
+}
+
+@keyframes blur {
+    0% {
         transform: scale(0);
         opacity: 0;
-        
+
     }
-    100%{
+
+    100% {
         transform: scale(1);
-        opacity:1 ;
+        opacity: 1;
     }
 }
 
+@media screen and (max-width:800px) {
+    *{
+        font-size: 10px;
+    }
 
+}
 
+@media screen and (max-width:500px) {
+    .section-three__recomond-card1 {
+        flex-basis: 45%;
+    }
 
+    .section-five__popular--crd {
+        flex-basis: 45%;
+    }
+    .section-two,.section-one_search,.section-one_icon{
+        display: none;
+    }
+    .section-one_title h1{
+        font-size: 3rem;
+    }
+    .menu{
+        display: block;
+    }
+    
+}
